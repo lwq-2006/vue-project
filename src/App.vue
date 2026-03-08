@@ -25,7 +25,7 @@ const cartItems = ref([
         quantity: 1,
         checked: true,
         tags: ['官方正品', '不支持7天无理由退货', '极速退款'],
-        image: './src/assets/DIMOO.png'
+        image: '/vue-dist/assets/DIMOO.png'
       }
     ]
   },
@@ -45,7 +45,7 @@ const cartItems = ref([
         quantity: 1,
         checked: true,
         tags: ['官方立减15元', '3期免息', '淘金币抵'],
-        image: './src/assets/蜡笔小新小夜灯.png'
+        image: '/vue-dist/assets/蜡笔小新小夜灯.png'
       }
     ]
   },
@@ -65,7 +65,7 @@ const cartItems = ref([
         quantity: 1,
         checked: false,
         tags: ['首单立减2元', '消费券', '退货险', '15天价保'],
-        image: './src/assets/熊猫粉饼.png'
+        image: '/vue-dist/assets/熊猫粉饼.png'
       }
     ]
   },
@@ -85,7 +85,7 @@ const cartItems = ref([
         quantity: 1,
         checked: false,
         tags: ['超级立新0.39元', '淘金币', '7天价保'],
-        image: './src/assets/蜡笔小新创可贴.png'
+        image: '/vue-dist/assets/蜡笔小新创可贴.png'
       }
     ]
   },
@@ -105,7 +105,7 @@ const cartItems = ref([
         quantity: 1,
         checked: false,
         tags: ['信用卡支付', '官方立减0.5元', '3期免息', '退货险'],
-        image: './src/assets/衬衫.png'
+        image: '/vue-dist/assets/衬衫.png'
       }
     ]
   },
@@ -125,7 +125,7 @@ const cartItems = ref([
         quantity: 1,
         checked: false,
         tags: ['超级立新4.6元', '退货险', '7天价保'],
-        image: './src/assets/黄色小狗开衫.png'
+        image: '/vue-dist/assets/黄色小狗开衫.png'
       }
     ]
   },
@@ -145,7 +145,7 @@ const cartItems = ref([
         quantity: 1,
         checked: false,
         tags: ['消费券', '官方立减17元', '大促价保'],
-        image: './src/assets/连帽卫衣.png'
+        image: '/vue-dist/assets/连帽卫衣.png'
       }
     ]
   },
@@ -165,7 +165,7 @@ const cartItems = ref([
         quantity: 1,
         checked: false,
         tags: ['消费券', '官方立减17元', '12期免息'],
-        image: './src/assets/运动服套装.png'
+        image: '/vue-dist/assets/运动服套装.png'
       }
     ]
   },
@@ -185,7 +185,7 @@ const cartItems = ref([
         quantity: 1,
         checked: false,
         tags: ['直降25元', '大促价保', '7天无理由'],
-        image: './src/assets/条纹外套.png'
+        image: '/vue-dist/assets/条纹外套.png'
       }
     ]
   }
@@ -283,7 +283,7 @@ const recommendItems = ref([
     id: 1, 
     name: '泡泡玛特DIMOO限定盲盒新品榜·第2名', 
     price: 79, 
-    image: './src/assets/DIMOO2.png',
+    image: '/vue-dist/assets/DIMOO2.png',
     platform: 'tmall',
     promoTags: [],
     sales: '1万+人购买'
@@ -292,7 +292,7 @@ const recommendItems = ref([
     id: 2, 
     name: 'DUSK三条杠双面穿夹克女春秋韩版宽松休闲外套', 
     price: 116.01, 
-    image: './src/assets/条纹外套.png',
+    image: '/vue-dist/assets/条纹外套.png',
     platform: 'tmall',
     promoTags: ['超级立减17.43元', '退货宝'],
     sales: '1000+人购买'
@@ -301,7 +301,7 @@ const recommendItems = ref([
     id: 3, 
     name: '正版联名蜡笔小新生日礼物送女生闺蜜创意礼盒', 
     price: 138, 
-    image: './src/assets/蜡笔大礼物.png',
+    image: '/vue-dist/assets/蜡笔大礼物.png',
     platform: 'tmall',
     promoTags: ['38焕新周', '大促价保', '退货宝'],
     sales: '200+人购买'
@@ -310,7 +310,7 @@ const recommendItems = ref([
     id: 4, 
     name: '【学院风减龄穿搭】休闲运动套装女春秋2024新款', 
     price: 121, 
-    image: './src/assets/套装衣服.png',
+    image: '/vue-dist/assets/套装衣服.png',
     platform: 'tmall',
     promoTags: ['38焕新周', '官方立减12%'],
     sales: '41人购买'
@@ -319,7 +319,7 @@ const recommendItems = ref([
     id: 5, 
     name: '微胖MM蓝色收腰绑带长袖衬衫女春季新款显瘦上衣', 
     price: 55.8, 
-    image: './src/assets/衬衫2.png',
+    image: '/vue-dist/assets/衬衫2.png',
     platform: 'tmall',
     promoTags: ['超级立减10%', '退货宝', '包邮'],
     sales: '8人购买'
@@ -328,7 +328,7 @@ const recommendItems = ref([
     id: 6, 
     name: '美式复古小狗刺绣宽松休闲卫衣女春秋薄款外套', 
     price: 52.7, 
-    image: './src/assets/小狗外套.png',
+    image: '/vue-dist/assets/小狗外套.png',
     platform: 'tmall',
     promoTags: ['38焕新周', '官方立减12%'],
     sales: '1000+人购买'
@@ -337,7 +337,7 @@ const recommendItems = ref([
     id: 7, 
     name: '美诺萌兰蜜粉饼定妆散粉控油持久遮瑕防水防汗', 
     price: 32.9, 
-    image: './src/assets/熊猫粉饼.png',
+    image: '/vue-dist/assets/熊猫粉饼.png',
     platform: 'tmall',
     promoTags: ['入选百亿补贴定妆粉好评榜'],
     sales: '500+人购买'
@@ -346,7 +346,7 @@ const recommendItems = ref([
     id: 8, 
     name: '【无畏契约系列】坐姿小摆件游戏周边手办模型', 
     price: 33.9, 
-    image: './src/assets/DIMOO.png',
+    image: '/vue-dist/assets/DIMOO.png',
     platform: 'tmall',
     promoTags: [],
     sales: '1000+人购买'
@@ -355,7 +355,7 @@ const recommendItems = ref([
     id: 6, 
     name: '泡泡玛特DIMOO如果今天星满29减3', 
     price: 20, 
-    image: './src/assets/DIMOO3.png',
+    image: '/vue-dist/assets/DIMOO3.png',
     platform: 'tmall',
     promoTags: ['满29减3'],
     sales: '500+人购买'
@@ -364,7 +364,7 @@ const recommendItems = ref([
     id: 7, 
     name: '条纹开衫外套女新款美式', 
     price: 69, 
-    image: './src/assets/开衫外套.png',
+    image: '/vue-dist/assets/开衫外套.png',
     platform: 'tmall',
     promoTags: ['38焕新周', '官方立减15%'],
     sales: '100+人购买'
@@ -373,7 +373,7 @@ const recommendItems = ref([
     id: 8, 
     name: '蜡笔小新玩偶花束卡通花', 
     price: 43.9, 
-    image: './src/assets/蜡笔花束.png',
+    image: '/vue-dist/assets/蜡笔花束.png',
     platform: 'tmall',
     promoTags: ['38焕新周', '官方立减12%'],
     sales: '1000+人购买'
@@ -382,7 +382,7 @@ const recommendItems = ref([
     id: 9, 
     name: '【学院风穿搭】休闲运动', 
     price: 103, 
-    image: './src/assets/运动服套装.png',
+    image: '/vue-dist/assets/运动服套装.png',
     platform: 'tmall',
     promoTags: ['38焕新周', '官方立减12%'],
     sales: '500+人购买'
@@ -391,7 +391,7 @@ const recommendItems = ref([
     id: 10, 
     name: '韩系穿搭趣味小狗刺绣条纹衬', 
     price: 57.66, 
-    image: './src/assets/黄色外套.png',
+    image: '/vue-dist/assets/黄色外套.png',
     platform: 'tmall',
     promoTags: ['官方立减12%', '退货宝', '包邮'],
     sales: '8人购买'
@@ -400,7 +400,7 @@ const recommendItems = ref([
     id: 11, 
     name: '十字满印字母卫衣女秋冬', 
     price: 61.5, 
-    image: './src/assets/十字卫衣.png',
+    image: '/vue-dist/assets/十字卫衣.png',
     platform: 'tmall',
     promoTags: ['38焕新周', '官方立减12%'],
     sales: '200+人购买'
@@ -409,7 +409,7 @@ const recommendItems = ref([
     id: 12, 
     name: '蜡笔小新联名2025新款', 
     price: 109.65, 
-    image: './src/assets/蜡笔手表.png',
+    image: '/vue-dist/assets/蜡笔手表.png',
     platform: 'tmall',
     promoTags: ['入选圆形儿童腕表热卖榜'],
     sales: '500+人购买'
