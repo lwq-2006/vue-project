@@ -34,11 +34,12 @@ const handleDeleteItem = (item) => {
 <template>
   <div class="shop-section">
     <div class="shop-header">
-      <div class="shop-select">
-        <input type="checkbox" :checked="shop.shopChecked" @change="handleToggleShopCheck" :id="'shop-' + shop.id" />
-        <span class="shop-platform" v-if="shop.platform">{{ shop.platform }}</span>
-        <label :for="'shop-' + shop.id" class="shop-name">{{ shop.shop }}</label>
-      </div>
+      <label class="shop-select">
+        <input type="checkbox" :checked="shop.shopChecked" @change="handleToggleShopCheck" />
+        <img v-if="shop.platform === '天猫'" class="platform-tag tmall" src="https://gw.alicdn.com/imgextra/i2/O1CN01Mo9BIf1DOOTmHgOR1_!!6000000000206-2-tps-102-48.png" alt="天猫">
+        <img v-else class="platform-tag taobao" src="https://gw.alicdn.com/imgextra/i1/O1CN01pej3Sn25s9StSuv4K_!!6000000007581-2-tps-106-48.png" alt="淘宝">
+        <span class="shop-name">{{ shop.shop }}</span>
+      </label>
     </div>
 
     <div class="shop-items">
@@ -58,8 +59,9 @@ const handleDeleteItem = (item) => {
 
 <style scoped>
 .shop-section {
-  border-bottom: 1px solid #eee;
-  margin-bottom: 12px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
 }
 
 .shop-section:last-child {
@@ -68,35 +70,44 @@ const handleDeleteItem = (item) => {
 }
 
 .shop-header {
-  padding: 12px 0;
+  padding: 8px 0;
 }
 
 .shop-select {
   display: flex;
   align-items: center;
   gap: 8px;
+  cursor: pointer;
 }
 
 .shop-select input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
   cursor: pointer;
+  border: 1px solid #f9f9f9;
+  border-radius: 4px;
+  accent-color: #ff5000;
+  appearance: auto;
 }
 
-.shop-platform {
+.platform-tag {
   display: inline-block;
-  padding: 2px 6px;
-  background-color: #ff5000;
-  color: white;
-  font-size: 11px;
-  border-radius: 2px;
+  height: 14px;
+  object-fit: contain;
+}
+
+.platform-tag.tmall {
+  width: 28px;
+}
+
+.platform-tag.taobao {
+  width: 30px;
 }
 
 .shop-name {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: normal;
   color: #333;
-  cursor: pointer;
 }
 
 .shop-name:hover {

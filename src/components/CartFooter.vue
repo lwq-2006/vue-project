@@ -68,9 +68,13 @@ const handleToggleSelectAll = () => {
 }
 
 .select-all input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
   cursor: pointer;
+  border: 1px solid #f8f7f7;
+  border-radius: 4px;
+  accent-color: #ff5000;
+  appearance: auto;
 }
 
 .select-all label {
